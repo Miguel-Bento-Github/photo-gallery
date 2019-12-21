@@ -1,0 +1,48 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input {
+  outline: none;
+}
+
+.icon {
+  width: 30px;
+  height: 100%;
+}
+
+.app {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: $color-dark;
+  font-family: $font;
+  padding: 5px;
+}
+
+.header {
+  display: flex;
+  flex-flow: column nowrap;
+
+  &-title {
+    text-transform: capitalize;
+    color: $color-white;
+    font-size: 50px;
+  }
+}
+
+.form {
+  width: $container-width;
+  display: flex;
+  height: 60px;
+}
+
+@import "./animations";

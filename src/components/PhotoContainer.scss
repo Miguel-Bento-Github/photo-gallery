@@ -1,0 +1,13 @@
+@import "../variables";
+
+.container {
+  background: $color-dark;
+  display: flex;
+  flex-flow: column wrap;
+  height: 80vh;
+  width: $container-width;
+
+  @media only screen and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    flex-flow: row wrap;
+  }
+}

@@ -1,0 +1,97 @@
+@import "../variables";
+
+.buttons {
+  color: $color-white;
+  font-family: $font;
+  font-weight: 200;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  background: $color-white;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  transition: all 150ms cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  @media only screen and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    width: 30px;
+    height: 30px;
+    border-width: 2px;
+    padding: 2px;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &--add,
+  &--remove {
+    top: 50%;
+    border-radius: 100%;
+    border: $border-width;
+    opacity: 0.7;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+
+    &:active {
+      padding: 0;
+      border-width: 7px;
+    }
+  }
+
+  &--add {
+    background-image: url(../assets/plus.svg);
+    color: $color-success;
+    border-color: $color-success;
+    left: 90%;
+  }
+
+  &--remove {
+    background-image: url(../assets/minus.svg);
+    color: $color-danger;
+    border-color: $color-danger;
+    right: 90%;
+  }
+
+  &--submit {
+    background-color: $color-primary;
+    border: $border-width $color-primary;
+    width: 70px;
+    opacity: 0.9;
+    fill: $color-dark;
+    padding: 0;
+
+    &:hover {
+      opacity: 1;
+      box-shadow: 0 0 5px $color-primary;
+    }
+
+    &:active {
+      background: lighten($color-primary, 5%);
+      border: 0;
+
+      svg {
+        transform: scale(1.1)
+      }
+    }
+  }
+
+  &--focus {
+    opacity: initial;
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+
+    &:hover {
+      opacity: 0.2;
+    }
+  }
+}

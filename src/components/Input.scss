@@ -1,0 +1,33 @@
+@import "../variables";
+
+.input {
+  padding: 15px;
+  width: 100%;
+  font-size: 16px;
+  font-family: $font;
+  border: 1px solid $color-primary;
+  opacity: 0.9;
+  background-color: $color-dark;
+  color: $color-white;
+  border-left-width: 10px;
+  transition: background-color 250ms cubic-bezier(0.215, 0.61, 0.355, 1);
+
+  &:hover {
+    background: rgba($color-primary, 0.5);
+  }
+
+  &::placeholder {
+    color: darken($color-white, 20%);
+  }
+
+  &:focus {
+    background: $color-primary;
+    opacity: initial;
+    outline: none;
+    color: $color-white;
+
+    &::placeholder {
+      color: darken($color-white, 10%);
+    }
+  }
+}
