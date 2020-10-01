@@ -7,7 +7,6 @@ import { useState } from "react";
  * @return {function} handleInputChange.
  * Contains a function that will set the user input into the query.
  */
-
 export const useInputChange = () => {
   const [input, setInput] = useState({});
   const handleInputChange = ({ target }) => setInput(target.value);

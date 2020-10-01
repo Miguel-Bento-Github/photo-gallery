@@ -7,7 +7,11 @@
   height: 80vh;
   width: $container-width;
 
-  @media only screen and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    flex-flow: row wrap;
+  @media only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "a a b"
+      "c d d";
   }
 }
