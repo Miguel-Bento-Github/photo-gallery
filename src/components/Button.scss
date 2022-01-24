@@ -53,11 +53,11 @@
     background-image: url(../assets/plus.svg);
     color: $color-success;
     border-color: $color-success;
-    left: 100%;
+    left: calc(100% + 5px);
 
     @media screen and (max-width: 800px) {
-      left: initial;
-      right: -10vw;
+      left: unset;
+      right: -30px;
     }
   }
 
@@ -68,7 +68,7 @@
     right: 100%;
 
     @media screen and (max-width: 800px) {
-      left: -10vw;
+      left: -30px;
     }
   }
 

@@ -11,7 +11,14 @@ function App() {
 
   const [photoTheme, setPhotoTheme] = useState("netherlands");
   const [photoAmount, setPhotoAmount] = useState(4);
-  const [photoData, setPhotoData] = useState([]);
+  const [photoData, setPhotoData] = useState([
+    "https://images.pexels.com/photos/1749799/pexels-photo-1749799.jpeg?auto=compress&cs=tinysrgb&h=350&w=600",
+    "https://images.pexels.com/photos/4158/apple-iphone-smartphone-desk.jpg?auto=compress&cs=tinysrgb&h=350&w=600",
+    "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&h=350&w=600",
+    "https://images.pexels.com/photos/10240710/pexels-photo-10240710.jpeg?auto=compress&cs=tinysrgb&h=350&w=600",
+    "https://images.pexels.com/photos/9988443/pexels-photo-9988443.jpeg?auto=compress&cs=tinysrgb&h=350&w=600",
+    "https://images.pexels.com/photos/10152629/pexels-photo-10152629.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350&w=600",
+  ]);
 
   useEffect(() => {
     let cancel = false;
