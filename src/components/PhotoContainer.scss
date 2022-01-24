@@ -1,17 +1,14 @@
 @import "../variables";
 
 .container {
+  position: relative;
   background: $color-dark;
   display: flex;
   flex-flow: column wrap;
   height: 80vh;
   width: $container-width;
 
-  @media only screen and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-      "a a b"
-      "c d d";
+  &:nth-last-child(-n + 2) {
+    border-right: 5px solid #111;
   }
 }

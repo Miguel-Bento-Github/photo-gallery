@@ -12,20 +12,11 @@
   color: #111;
   border: 5px solid;
   outline: 5px #111;
+  width: 50%;
+  outline: none;
 
-  @media only screen and (min-device-width: 1024px) {
-    width: 50%;
-    outline: none;
-  }
-
-  &:first-child,
   &:nth-child(-n + 2) {
     border-left: $border-width;
-  }
-
-  &:last-child,
-  &:nth-last-child(2) {
-    border-right: $border-width;
   }
 
   &:nth-child(6n - 5),
@@ -41,38 +32,28 @@
   }
 
   &:nth-child(6n - 5) {
-    @media only screen and (min-device-width: 1024px) {
-      height: 25%;
-      width: initial;
-    }
+    height: 25%;
+    width: initial;
   }
 
   &:nth-child(6n - 4) {
-    @media only screen and (min-device-width: 1024px) {
-      height: 75%;
-      width: initial;
-    }
+    height: 75%;
+    width: initial;
   }
 
   &:nth-child(6n - 3),
   &:nth-child(6n - 2) {
-    @media only screen and (min-device-width: 1024px) {
-      height: 50%;
-      width: initial;
-    }
+    height: 50%;
+    width: initial;
   }
 
   &:nth-child(6n - 1) {
-    @media only screen and (min-device-width: 1024px) {
-      height: 70%;
-      width: initial;
-    }
+    height: 70%;
+    width: initial;
   }
 
   &:nth-child(6n) {
-    @media only screen and (min-device-width: 1024px) {
-      height: 30%;
-      width: initial;
-    }
+    height: 30%;
+    width: initial;
   }
 }
