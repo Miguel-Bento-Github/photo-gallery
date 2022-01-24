@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.scss";
 import { ReactComponent as Search } from "./assets/search.svg";
 import Button from "./components/Button";
@@ -13,30 +13,38 @@ function App() {
   const [photoAmount, setPhotoAmount] = useState(4);
   const [photoData, setPhotoData] = useState([]);
 
-  // useEffect(() => {
-  //   let cancel = false;
-  //   /**
-  //    * Fetch data and check for duplicates
-  //    */
-  //   const fetchData = async () => {
-  //     try {
-  //       const response = await fetch(
-  //         `https://source.unsplash.com/random/?${photoTheme}`
-  //       );
-  //       if (!cancel) setPhotoData((oldData) => [...oldData, response.url]);
-  //     } catch (error) {
-  //       throw new Error(error.message);
-  //     }
-  //   };
+  useEffect(() => {
+    let cancel = false;
+    if (cancel) return;
+    /**
+     * Fetch data and check for duplicates
+     */
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          `https://source.unsplash.com/random/?${photoTheme}`
+        );
+        if (photoData.includes(response.url)) return;
+        if (!cancel) setPhotoData((oldData) => [...oldData, response.url]);
+      } catch (error) {
+        throw new Error(error);
+      }
+    };
 
-  //   if (photoData.length <= photoAmount + 2) fetchData();
+    const callInterval = setInterval(() => {
+      if (photoData.length <= photoAmount + 2) fetchData();
+    }, 50);
 
-  //   return () => {
-  //     setPhotoData((photoData) => [...new Set(photoData)]);
-  //     if (photoData.length <= photoAmount + 2) fetchData();
-  //     cancel = true;
-  //   };
-  // }, [photoAmount, photoData, photoData.length, photoTheme]);
+    if (!(photoData.length <= photoAmount + 2)) {
+      clearInterval(callInterval);
+      cancel = true;
+      return;
+    }
+
+    return () => {
+      cancel = true;
+    };
+  }, [photoAmount, photoData, photoData.length, photoTheme]);
 
   const removePhoto = () => setPhotoAmount(photoAmount - 2);
   const addPhoto = () => setPhotoAmount(photoAmount + 2);
