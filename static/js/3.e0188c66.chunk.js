@@ -1,2 +1,0 @@
-(this["webpackJsonpphoto-gallery"]=this["webpackJsonpphoto-gallery"]||[]).push([[3],{16:function(t,e,n){},17:function(t,e,n){"use strict";n.r(e),n.d(e,"default",(function(){return c}));var a=n(0),o=n.n(a),r=n(3);n(16);function c(t){var e=t.photoId,n={backgroundImage:"url(".concat(e,")")};return o.a.createElement("div",{className:"photo",style:n},!e&&o.a.createElement(r.a,null))}}}]);
-//# sourceMappingURL=3.e0188c66.chunk.js.map
