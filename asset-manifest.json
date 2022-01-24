@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/photo-gallery/static/css/main.2bc623f9.chunk.css",
+    "main.css": "/photo-gallery/static/css/main.be8a599c.chunk.css",
     "main.js": "/photo-gallery/static/js/main.5498f0f8.chunk.js",
     "main.js.map": "/photo-gallery/static/js/main.5498f0f8.chunk.js.map",
-    "runtime-main.js": "/photo-gallery/static/js/runtime-main.1b85f739.js",
-    "runtime-main.js.map": "/photo-gallery/static/js/runtime-main.1b85f739.js.map",
+    "runtime-main.js": "/photo-gallery/static/js/runtime-main.288e85ba.js",
+    "runtime-main.js.map": "/photo-gallery/static/js/runtime-main.288e85ba.js.map",
     "static/js/2.14866b9e.chunk.js": "/photo-gallery/static/js/2.14866b9e.chunk.js",
     "static/js/2.14866b9e.chunk.js.map": "/photo-gallery/static/js/2.14866b9e.chunk.js.map",
-    "static/css/3.c53a35f7.chunk.css": "/photo-gallery/static/css/3.c53a35f7.chunk.css",
+    "static/css/3.52420330.chunk.css": "/photo-gallery/static/css/3.52420330.chunk.css",
     "static/js/3.e0188c66.chunk.js": "/photo-gallery/static/js/3.e0188c66.chunk.js",
     "static/js/3.e0188c66.chunk.js.map": "/photo-gallery/static/js/3.e0188c66.chunk.js.map",
     "index.html": "/photo-gallery/index.html",
-    "precache-manifest.a56944b3623f67d87aefba8a28412648.js": "/photo-gallery/precache-manifest.a56944b3623f67d87aefba8a28412648.js",
+    "precache-manifest.f098fdb34870f20577780bdcd88d1ec6.js": "/photo-gallery/precache-manifest.f098fdb34870f20577780bdcd88d1ec6.js",
     "service-worker.js": "/photo-gallery/service-worker.js",
-    "static/css/3.c53a35f7.chunk.css.map": "/photo-gallery/static/css/3.c53a35f7.chunk.css.map",
-    "static/css/main.2bc623f9.chunk.css.map": "/photo-gallery/static/css/main.2bc623f9.chunk.css.map",
+    "static/css/3.52420330.chunk.css.map": "/photo-gallery/static/css/3.52420330.chunk.css.map",
+    "static/css/main.be8a599c.chunk.css.map": "/photo-gallery/static/css/main.be8a599c.chunk.css.map",
     "static/js/2.14866b9e.chunk.js.LICENSE": "/photo-gallery/static/js/2.14866b9e.chunk.js.LICENSE",
     "static/media/Button.scss": "/photo-gallery/static/media/plus.94c9238b.svg",
     "static/media/search.64b794c3.svg": "/photo-gallery/static/media/search.64b794c3.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1b85f739.js",
+    "static/js/runtime-main.288e85ba.js",
     "static/js/2.14866b9e.chunk.js",
-    "static/css/main.2bc623f9.chunk.css",
+    "static/css/main.be8a599c.chunk.css",
     "static/js/main.5498f0f8.chunk.js"
   ]
 }
